@@ -16,8 +16,12 @@ html {
   width: auto;
 }
 
+html,
 body {
   overflow-x: hidden;
+}
+body {
+  position: relative;
 }
 
 .fa-solid,
@@ -517,11 +521,83 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .fa-solid,
+  .fa-brands {
+    color: grey;
+    opacity: 0.6;
+    font-size: 50px;
+  }
+  .skills__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+    padding: 0 150px;
+  }
+  .skills__title {
+    margin: 20px auto;
+  }
+  .skills__title h2 {
+    font-size: 1.2rem;
+  }
+
+  .skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+  }
+  .lang__content {
+    /* display: flex; */
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: row;
+    align-self: center;
+    /* background-color: antiquewhite; */
+    align-items: center;
+  }
+
+  .skill__img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .lang__text {
+    font-size: 0.8rem;
+  }
+
+  .lang__list1 {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 15px; */
+    height: 100%;
+    width: 45vh;
+    /* background-color: #9009ff; */
+    /* padding: 0px 15px; */
+  }
+  .lang__item {
+    margin-top: 10px;
+  }
+
+  .lang__list2 {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: gray; */
+    margin-left: 30px;
+    margin-right: 30px;
+    /* margin-top: 90px; */
+  }
+}
+
 /* projects section */
 .projects {
   display: flex;
   /* align-items: center; */
-  height: 100%;
+  height: 100vh;
   padding-bottom: 150px;
   position: relative;
   justify-content: center;
@@ -545,7 +621,7 @@ body {
   text-align: center;
   align-self: center;
   margin: 30px auto;
-  margin-bottom: 50px;
+  /* margin-bottom: 0px; */
 }
 
 .projects__title h2 {
@@ -802,6 +878,97 @@ body {
   .project__card:hover {
     width: 66vh;
     height: 210px;
+  }
+
+  .project__desc {
+    font-size: 0.8rem;
+  }
+
+  .project__read_text {
+    font-size: 0.7rem;
+  }
+
+  .project__read_container {
+    width: 100px;
+    height: 28px;
+  }
+  .projects__title h2 {
+    font-size: 1.2rem;
+  }
+
+  .project__name {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects {
+    margin-top: 230px;
+  }
+
+  .projects__content {
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .project__card {
+    position: relative;
+    display: flex;
+    background-color: white;
+    width: 45vh;
+    height: 250px;
+    justify-content: space-around;
+    /* align-content: center; */
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    margin-bottom: 380px;
+    /* opacity: 0.8; */
+    /* padding: 0 90px; */
+    margin: 0 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .project__text_container {
+    padding: 10px 15px;
+    /* background-color: #9009ff; */
+  }
+  .project__tag {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #9009ff;
+  }
+
+  .project__img_bee {
+    margin-top: 0;
+    height: 110px;
+    margin-left: 25px;
+  }
+
+  .project__img_pill {
+    margin-top: 0;
+    height: 80px;
+    margin-left: 20px;
+  }
+
+  .projects__container {
+    display: flex;
+    /* justify-content: center; */
+    margin: 0 auto;
+    /* max-width: 1300px; */
+    padding: 0 100px;
+    flex-direction: column;
+    position: absolute;
+    /* width: 90vh; */
+    flex-wrap: wrap;
+    /* background-color: #9009ff; */
+  }
+
+  .project__card:hover {
+    width: 46vh;
+    height: 260px;
   }
 
   .project__desc {
