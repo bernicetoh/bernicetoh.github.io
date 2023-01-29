@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:wght@300;400;600&family=Lato&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono&family=Sofia+Sans&display=swap" rel="stylesheet">
+<script
+      src="https://kit.fontawesome.com/8caadc3166.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- nav bar section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links">About me</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/projects.html" class="navbar__links">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/education.html" class="navbar__links">Education</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/connect.html" class="navbar__links">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- intro header -->
+    <div class="intro">
+      <div class="intro__container">
+        <!-- <div class="bg__container"> -->
+          <!-- <div class="purple__gradient"></div>
+          <div class="blue__gradient"></div> -->
+        <!-- </div> -->
+        <img src="./images/Gradient2.png" alt="" class="intro__bgblue">
+        <img src="./images/Gradient.png" alt="" class="intro__bgpurple">
+        <img src="./images/Gradient3.png" alt="" class="intro__bgyellow">
+        <img src="./images/Gradient4.png" alt="" class="intro__bgpink">
+
+
+        <div class="intro__content">
+          <h1>Hello! I'm Bernice</h1>
+          <h2>
+            I'm a Computer Science undergraduate student <br />
+            at the National University of Singapore. <br />
+            I love creating art with code!
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- skills -->
+    <div class="skills">
+      <div class="skills__container">
+        <div class="skills__title hidden">
+          <h2>Languages I Speak & Tools I Use</h2>
+        </div>
+        <div class="skills__content">
+          <div class="lang__content">
+            <ul class="lang__list1 hiddenleft">
+              <li class="lang__item">
+                <i class="fa-brands fa-python" col></i>
+                 <p class="lang__text">Python</p>
+              </li>
+              <li class="lang__item">
+                <i class="fa-brands fa-square-js"></i>
+                <p class="lang__text">JavaScript</p>
+              </li>
+              <li class="lang__item">
+                <i class="fa-brands fa-java"></i>
+                <p class="lang__text">Java</p>
+              </li>
+              <li class="lang__item">
+                <i class="fa-solid fa-database"></i>
+                <p class="lang__text">SQL</p>
+              </li>
+              <li class="lang__item">
+                <i class="fa-brands fa-html5"></i>
+                <p class="lang__text">HTML</p>
+              </li>
+              <li class="lang__item">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p class="lang__text">CSS</p>
+              </li>
+            </ul>
+          </div>
+          <div class="lang__content hiddenright">
+            <ul class="lang__list2">
+              <li class="lang__item">
+                <i class="fa-brands fa-react"></i>
+                <p class="lang__text">React</p>
+              </li>
+              <li class="lang__item">
+                <img src="./images/firebase.png" alt="" class="skill__img" />
+                <p class="lang__text">Firebase</p>
+              </li>
+              <li class="lang__item">
+                <img src="./images/postgresql.png" alt="" class="skill__img" />
+                <p class="lang__text">PostgreSQL</p>
+              </li>
+              <li class="lang__item">
+                <i class="fa-brands fa-git" style="font-size: 60px;"></i>
+                <p class="lang__text">Git</p>
+              </li>
+              <li class="lang__item">
+                <i class="fa-brands fa-github"></i>
+                  <p class="lang__text">Github</p>
+              </li>
+              <li class="lang__item">
+                <img
+                  src="./images/microsoft-office.png"
+                  alt=""
+                  class="skill__img"
+                />
+                <p class="lang__text">Microsoft Office</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects -->
+    <div class="projects">
+      <img src="./images/Gradient2.png" alt="" class="intro__bgblue" style="left: 150vh; opacity: 0.3;">
+      <div class="projects__container">
+        <div class="projects__title hidden">
+          <h2>My Projects</h2>
+        </div>
+        <div class="projects__content">
+          <div class="project__card hiddenleft">
+            <img src="./images/bee.jpg" alt="" class="project__img_bee">
+            <div class="project__text_container">
+              <p class="project__tag">Coding</p>
+              <h3 class="project__name">beezeebeez</h3>
+              <p class="project__desc">A productivity mobile application 
+                that aims to provide an all-in-one application that serves to increase user's productivity levels.</p>
+                <div class="project__read_container">
+                  <p class="project__read_text">Read more</p>
+                </div>
+            </div>
+
+          </div>
+          <div class="project__card hiddenright">
+            <img src="./images/pill.png" alt="" class="project__img_pill">
+            <div class="project__text_container">
+              <p class="project__tag">Coding</p>
+              <h3 class="project__name">morphine</h3>
+              <p class="project__desc">A service mobile application that goes hand-in-hand with a prosthetic leg device.
+              </p>
+              <div class="project__read_container">
+                <p class="project__read_text">Read more</p>
+              </div>
+            </div>
+          </div>
+
+        
+      </div>
+      <img src="./images/Gradient.png" alt="" class="intro__bgpurple" style="right: 90vh; top: 100px; z-index: -1; opacity: 0.2;">
+    </div>
+
+    <!-- education -->
+    <div class="education">
+      <div class="education__container">
+        
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
