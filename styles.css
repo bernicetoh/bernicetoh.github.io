@@ -396,9 +396,9 @@ body {
 }
 
 .skill__img {
-  /* opacity: 0.6; */
+  opacity: 0.6;
   height: 70px;
-  width: 70px;
+  /* width: 70px; */
   color: gray;
 }
 
@@ -830,7 +830,7 @@ body {
 
   .skill__img {
     height: 60px;
-    width: 60px;
+    /* width: 70px; */
   }
 
   .lang__text {
@@ -1316,7 +1316,6 @@ body {
 
   .skill__img {
     height: 30px;
-    width: 30px;
   }
 
   .lang__text {
