@@ -584,13 +584,16 @@ body {
   }
 
   .navbar__menu.active {
-    background: black;
+    background: white;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
     font-size: 1.2rem;
     margin-top: 0;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
   }
   .navbar__menu.active .navbar__links {
     color: black;
@@ -629,7 +632,7 @@ body {
   }
 
   .navbar__container.active {
-    background: black;
+    background: white;
     transition: all 0.8s ease;
   }
 
