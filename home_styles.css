@@ -7,11 +7,26 @@
 
 html {
   width: auto;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   overflow-x: hidden;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 .circle_body {
@@ -231,6 +246,7 @@ body {
   display: flex;
   position: relative;
   justify-content: center;
+  word-spacing: -5px;
 }
 
 .intro__greetings :nth-child(2) {
@@ -296,6 +312,8 @@ body {
 
 .aboutme__title h2 {
   font-size: 2.5rem;
+  word-spacing: -5px;
+  word-spacing: -5px;
 }
 
 .aboutme__text_container {
@@ -356,6 +374,7 @@ body {
   color: black;
   font-weight: 600px;
   font-size: 2.5rem;
+  word-spacing: -5px;
 }
 
 .skills__title h2 {
@@ -446,6 +465,7 @@ body {
   color: black;
   font-weight: 600px;
   font-size: 2.5rem;
+  word-spacing: -5px;
 }
 
 .projects__title p {
@@ -582,6 +602,7 @@ body {
   font-size: 2.5rem;
   align-items: center;
   justify-content: center;
+  word-spacing: -5px;
 }
 
 .connect__icons {
@@ -784,6 +805,7 @@ body {
 
   .aboutme__title h2 {
     font-size: 1.8rem;
+    word-spacing: -5px;
   }
 
   .aboutme__text_container p {
@@ -807,6 +829,7 @@ body {
   }
   .skills__title h2 {
     font-size: 1.8rem;
+    word-spacing: -5px;
   }
 
   .skills__title p {
@@ -939,6 +962,7 @@ body {
     font-size: 1.8rem;
     align-items: center;
     justify-content: center;
+    word-spacing: -5px;
   }
 
   .connect__icons {
@@ -1057,6 +1081,7 @@ body {
 
   .aboutme__title h2 {
     font-size: 1.4rem;
+    word-spacing: -5px;
   }
 
   .aboutme__text_container p {
@@ -1085,6 +1110,7 @@ body {
 
   .skills__title h2 {
     font-size: 1.4rem;
+    word-spacing: -5px;
   }
 
   .skills__title p {
@@ -1184,6 +1210,7 @@ body {
   .connect__title h2 {
     font-size: 1.4rem;
     width: 80%;
+    word-spacing: -5px;
   }
 
   .connect__container {
@@ -1273,6 +1300,7 @@ body {
 
   .aboutme__title h2 {
     font-size: 1.4rem;
+    word-spacing: -5px;
   }
 
   .skills__container {
@@ -1293,6 +1321,7 @@ body {
   }
   .skills__title h2 {
     font-size: 1.4rem;
+    word-spacing: -5px;
   }
 
   .skills__title p {
@@ -1389,6 +1418,7 @@ body {
 
   .connect__title h2 {
     font-size: 1.4rem;
+    word-spacing: -5px;
   }
 }
 

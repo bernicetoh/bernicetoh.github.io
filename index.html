@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home_styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:wght@300;400;600&family=Lato&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono&family=Sofia+Sans&display=swap" rel="stylesheet">
-<script
-      src="https://kit.fontawesome.com/8caadc3166.js"
-      crossorigin="anonymous"
-    ></script>
+    <script
+          src="https://kit.fontawesome.com/8caadc3166.js"
+          crossorigin="anonymous"
+        ></script>
   </head>
   <body>
     <div class="circle_body">
@@ -26,7 +26,8 @@
           </div>
           <ul class="navbar__menu">
             <li class="navbar__item">
-              <a href="/about.html" class="navbar__links">About me</a>
+              <!-- <a href="#aboutme" class="navbar__links">About me</a> -->
+              <a href="/index.html" class="navbar__links">Home</a>
             </li>
             <li class="navbar__item">
               <a href="/projects.html" class="navbar__links">Projects</a>
@@ -35,7 +36,7 @@
               <a href="/education.html" class="navbar__links">Education</a>
             </li>
             <li class="navbar__item">
-              <a href="/connect.html" class="navbar__links">Connect</a>
+              <a href="#connect" class="navbar__links">Connect</a>
             </li>
           </ul>
         </div>
@@ -49,14 +50,14 @@
               <h1>I'm Bernice.</h1>
             </div>
             <p>
-              I'm a Computer Science undergraduate student
+              I'm a second year Computer Science undergraduate student
               at the National University of Singapore.
             </p>
           </div>
         </div>
       </div>
       <!-- about me -->
-      <div class="aboutme">
+      <div class="aboutme" id="aboutme">
         <div class="aboutme__container">
           <div class="aboutme__title hidden">
             <h2>About me</h2>
@@ -121,7 +122,7 @@
                   <p class="lang__text">React</p>
                 </li>
                 <li class="lang__item">
-                  <img src="./images/firebase.png" alt="" class="skill__img" style="color: grey;"/>
+                  <img src="./images/firebase.png" alt="" class="skill__img"/>
                   
                   <p class="lang__text">Firebase</p>
                 </li>
@@ -160,7 +161,9 @@
                 <p class="project__desc">A productivity mobile application 
                   that aims to provide an all-in-one application that serves to increase user's productivity levels.</p>
                   <div class="project__read_container">
-                    <p class="project__read_text">Read more</p>
+                    <a href="projects.html#beez" class="" style="color:white">
+                      <p class="project__read_text">Read more</p>
+                    </a>
                   </div>
               </div>
 
@@ -173,7 +176,9 @@
                 <p class="project__desc">A service mobile application that goes hand-in-hand with a prosthetic leg device.
                 </p>
                 <div class="project__read_container">
-                  <p class="project__read_text">Read more</p>
+                  <a href="projects.html#morphine" style="color: white;">
+                    <p class="project__read_text">Read more</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -182,7 +187,7 @@
       </div>
 
       <!-- connect -->
-      <div class="connect">
+      <div class="connect" id="connect">
         <div class="connect__container hidden">
           <div class="connect__title">
             <h2>Let's make something work together.</h2>
@@ -200,7 +205,7 @@
           </div>
         </div>
       </div>    
-      <script src="app.js"></script>
+      <script src="home_app.js"></script>
     </div>
   </body>
 </html>
