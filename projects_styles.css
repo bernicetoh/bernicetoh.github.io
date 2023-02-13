@@ -72,6 +72,11 @@ body {
   filter: blur(0);
 }
 
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* NAVIGATION BAR */
 .navbar {
   background: transparent;
@@ -149,6 +154,9 @@ body {
   /* color: #995dcb; */
   font-size: 4rem;
   word-spacing: -4px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(100px);
+  opacity: 0;
 }
 
 .beez {

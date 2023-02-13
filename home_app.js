@@ -46,3 +46,187 @@ hiddenElemenents.forEach((el) => observer.observe(el));
 
 hiddenElementsleft.forEach((el) => observerleft.observe(el));
 hiddenElementsright.forEach((el) => observerright.observe(el));
+
+gsap.registerPlugin(ScrollTrigger);
+// REVEAL //
+gsap.utils.toArray(".revealUp").forEach(function (elem) {
+  ScrollTrigger.create({
+    trigger: elem,
+    start: "top 80%",
+    end: "bottom 20%",
+    markers: true,
+    onEnter: function () {
+      gsap.fromTo(
+        elem,
+        { y: 100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto",
+        }
+      );
+    },
+    onLeave: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    },
+    onEnterBack: function () {
+      gsap.fromTo(
+        elem,
+        { y: -100, autoAlpha: 0 },
+        {
+          duration: 1.25,
+          y: 0,
+          autoAlpha: 1,
+          ease: "back",
+          overwrite: "auto",
+        }
+      );
+    },
+    onLeaveBack: function () {
+      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+    },
+  });
+});
+
+const tl = gsap.timeline({ defaults: { ease: "power4.inOut" } });
+
+tl.to(".intro", {
+  "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+  opacity: 1,
+  y: 0,
+  duration: 0.6,
+})
+  .to(".intro p", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 1,
+  })
+  .to(".aboutme__title", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 3,
+    start: "top top",
+    scrollTrigger: {
+      trigger: ".aboutme__title",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 1,
+    },
+  })
+  .to(".profile_round", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 3,
+    start: "top top",
+    "clip-path": "circle(50% at 50% 50%)",
+
+    scrollTrigger: {
+      trigger: ".profile_round",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 0.5,
+    },
+  })
+  .to(".aboutme__text_container", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 2,
+    start: "top top",
+    scrollTrigger: {
+      trigger: ".aboutme__text_container",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 1,
+    },
+  })
+  .to(".skills__title", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 4,
+    start: "top top",
+    scrollTrigger: {
+      trigger: ".skills__title",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 1,
+    },
+  })
+  .to(".projects__title", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 4,
+    start: "top top",
+    scrollTrigger: {
+      trigger: ".projects__title",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 1,
+    },
+  })
+  .from(".lang__list1", {
+    duration: 1,
+    x: "-50vw",
+    ease: "linear",
+    "clip-path": "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
+    y: "100px",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".lang__list1",
+      start: "top 100%",
+      end: "bottom 100%",
+      scrub: 1,
+
+      toggleActions: "restart pause reverse reset",
+    },
+  })
+  .from(".lang__list2", {
+    duration: 1,
+    x: "50vw",
+    ease: "linear",
+    "clip-path": "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
+    y: "100px",
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".lang__list2",
+      start: "top 100%",
+      end: "bottom 100%",
+      scrub: 1,
+
+      toggleActions: "restart pause reverse reset",
+    },
+  })
+  .from(".project__card1", {
+    duration: 1,
+    x: "-50vw",
+    ease: "linear",
+    scrollTrigger: {
+      trigger: ".project__card1",
+      start: "top 100%",
+      end: "bottom 80%",
+      scrub: 1,
+
+      toggleActions: "restart pause reverse reset",
+    },
+  })
+  .from(".project__card2", {
+    duration: 1,
+    x: "50vw",
+    ease: "linear",
+
+    scrollTrigger: {
+      trigger: ".project__card2",
+      start: "top 100%",
+      end: "bottom 80%",
+      scrub: 1,
+
+      toggleActions: "restart pause reverse reset",
+    },
+  });
