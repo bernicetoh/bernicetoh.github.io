@@ -1,3 +1,13 @@
+const menu = document.querySelector("#mobile-menu");
+const menuLinks = document.querySelector(".navbar__menu");
+const container = document.querySelector(".navbar__container");
+
+menu.addEventListener("click", function () {
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
+  container.classList.toggle("active");
+});
+
 const hiddenElements = document.querySelectorAll(".hidden");
 
 const observer = new IntersectionObserver((entries) => {

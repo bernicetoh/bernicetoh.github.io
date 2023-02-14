@@ -114,7 +114,7 @@ tl.to(".intro", {
       trigger: ".aboutme__title",
       start: "top 90%",
       end: "bottom 100%",
-      scrub: 1,
+      scrub: 4,
     },
   })
   .to(".profile_round", {
@@ -142,7 +142,7 @@ tl.to(".intro", {
       trigger: ".aboutme__text_container",
       start: "top 90%",
       end: "bottom 100%",
-      scrub: 1,
+      scrub: 4,
     },
   })
   .to(".skills__title", {
@@ -155,7 +155,7 @@ tl.to(".intro", {
       trigger: ".skills__title",
       start: "top 90%",
       end: "bottom 100%",
-      scrub: 1,
+      scrub: 4,
     },
   })
   .to(".projects__title", {
@@ -168,7 +168,7 @@ tl.to(".intro", {
       trigger: ".projects__title",
       start: "top 90%",
       end: "bottom 100%",
-      scrub: 1,
+      scrub: 4,
     },
   })
   .from(".lang__list1", {
@@ -182,7 +182,7 @@ tl.to(".intro", {
       trigger: ".lang__list1",
       start: "top 100%",
       end: "bottom 100%",
-      scrub: 1,
+      scrub: 4,
 
       toggleActions: "restart pause reverse reset",
     },
@@ -198,7 +198,7 @@ tl.to(".intro", {
       trigger: ".lang__list2",
       start: "top 100%",
       end: "bottom 100%",
-      scrub: 1,
+      scrub: 4,
 
       toggleActions: "restart pause reverse reset",
     },
@@ -211,7 +211,7 @@ tl.to(".intro", {
       trigger: ".project__card1",
       start: "top 100%",
       end: "bottom 80%",
-      scrub: 1,
+      scrub: 4,
 
       toggleActions: "restart pause reverse reset",
     },
@@ -225,7 +225,7 @@ tl.to(".intro", {
       trigger: ".project__card2",
       start: "top 100%",
       end: "bottom 80%",
-      scrub: 1,
+      scrub: 4,
 
       toggleActions: "restart pause reverse reset",
     },

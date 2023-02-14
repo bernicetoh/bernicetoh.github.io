@@ -1303,6 +1303,7 @@ h1 {
     /* position: relative; */
     text-align: left;
     font-size: 1.8rem;
+    word-spacing: -2px;
     /* justify-content: center; */
   }
   .intro__greetings :nth-child(1) {
@@ -1597,6 +1598,13 @@ h1 {
 
   .project__name {
     font-size: 1.1rem;
+  }
+
+  .skill__img {
+    opacity: 0.6;
+    height: 50px;
+    /* width: 70px; */
+    color: gray;
   }
 }
 
