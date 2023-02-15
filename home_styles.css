@@ -648,25 +648,11 @@ h1 {
 .connect__icon {
   color: #995dcb;
   /* opacity: 0.7; */
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .connect__icon:hover {
-  color: white;
-}
-.connect__icon_container:hover {
-  background-color: #995dcb;
-}
-
-.connect__icon_container {
-  display: flex;
-  width: 90px;
-  height: 90px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border-width: 2px;
-  border: 1px solid #995dcb;
+  font-size: 75px;
 }
 
 /* MEDIA SCREEN 860PX */

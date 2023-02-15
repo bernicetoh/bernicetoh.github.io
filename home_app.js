@@ -1,24 +1,11 @@
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
 const container = document.querySelector(".navbar__container");
-const connect_icon_container = document.querySelector(
-  ".connect__icon_container"
-);
 
 menu.addEventListener("click", function () {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
   container.classList.toggle("active");
-});
-
-const iconobserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("hover");
-    } else {
-      entry.target.classList.remove("hover");
-    }
-  });
 });
 
 const observer = new IntersectionObserver((entries) => {
@@ -59,7 +46,6 @@ hiddenElemenents.forEach((el) => observer.observe(el));
 
 hiddenElementsleft.forEach((el) => observerleft.observe(el));
 hiddenElementsright.forEach((el) => observerright.observe(el));
-connect_icon_container.forEach((el) => iconobserver.observe(el));
 
 gsap.registerPlugin(ScrollTrigger);
 // REVEAL //
