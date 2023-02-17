@@ -26,12 +26,32 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-a:hover {
-  text-decoration: none;
+.navbar ul li a,
+.navbar ul li a:after,
+.navbar ul li a:before {
+  transition: all 0.5s;
+}
+.navbar ul li a:hover {
+  color: #555;
 }
 
-a:active {
-  text-decoration: none;
+.navbar ul li a {
+  position: relative;
+}
+.navbar ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.navbar ul li a:hover:after {
+  width: 100%;
 }
 
 h1 {
@@ -806,6 +826,34 @@ h1 {
   }
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar ul li a,
+  .navbar ul li a:after,
+  .navbar ul li a:before {
+    transition: all 0.5s;
+  }
+  .navbar ul li a:hover {
+    color: #555;
+  }
+
+  .navbar ul li a {
+    position: relative;
+  }
+  .navbar ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  .navbar ul li a:hover:after {
+    width: 10%;
   }
 
   .intro__container {
