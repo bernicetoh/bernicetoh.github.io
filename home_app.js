@@ -172,9 +172,9 @@ tl.to(".intro", {
     },
   })
   .from(".lang__list1", {
-    duration: 1,
+    duration: 3,
     x: "-50vw",
-    ease: "linear",
+    // ease: "linear",
     "clip-path": "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
     y: "100px",
     opacity: 0,
@@ -182,15 +182,15 @@ tl.to(".intro", {
       trigger: ".lang__list1",
       start: "top 100%",
       end: "bottom 100%",
-      scrub: 4,
+      scrub: 5,
 
       toggleActions: "restart pause reverse reset",
     },
   })
   .from(".lang__list2", {
-    duration: 1,
+    duration: 3,
     x: "50vw",
-    ease: "linear",
+    // ease: "linear",
     "clip-path": "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
     y: "100px",
     opacity: 0,
@@ -198,7 +198,7 @@ tl.to(".intro", {
       trigger: ".lang__list2",
       start: "top 100%",
       end: "bottom 100%",
-      scrub: 4,
+      scrub: 5,
 
       toggleActions: "restart pause reverse reset",
     },
@@ -206,7 +206,7 @@ tl.to(".intro", {
   .from(".project__card1", {
     duration: 1,
     x: "-50vw",
-    ease: "linear",
+    // ease: "linear",
     scrollTrigger: {
       trigger: ".project__card1",
       start: "top 100%",
@@ -219,7 +219,7 @@ tl.to(".intro", {
   .from(".project__card2", {
     duration: 1,
     x: "50vw",
-    ease: "linear",
+    // ease: "linear",
 
     scrollTrigger: {
       trigger: ".project__card2",
@@ -229,4 +229,37 @@ tl.to(".intro", {
 
       toggleActions: "restart pause reverse reset",
     },
-  });
+  })
+  .to(".connect__title", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 4,
+    start: "top top",
+    scrollTrigger: {
+      trigger: ".connect__title",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 4,
+    },
+  })
+  .from(
+    ".icon",
+    {
+      stagger: 0.2,
+      opacity: 0,
+      y: 100,
+      scrollTrigger: {
+        trigger: ".connect__title",
+        start: "top 90%",
+        end: "bottom 100%",
+        scrub: 4,
+      },
+    }
+    // scrollTrigger: {
+    //   trigger: ".icon",
+    //   start: "top 100%",
+    //   end: "bottom 90%",
+    //   markers: true,
+    // },
+  );
