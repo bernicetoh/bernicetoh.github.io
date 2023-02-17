@@ -28,6 +28,10 @@ body {
   /* overflow-x: hidden; */
 }
 
+body {
+  line-height: 1.5;
+}
+
 .fa-solid,
 .fa-brands {
   color: grey;
