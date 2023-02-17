@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  width: auto;
+  scroll-behavior: smooth;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+html,
+body {
+  /* overflow-x: hidden; */
+}
+
+body {
+  line-height: 1.5;
+}
+.title {
+  display: flex;
+  /* align-items: center; */
+  /* height: 100vh; */
+  /* padding-bottom: 150px; */
+  /* top: 100vh; */
+  position: relative;
+  justify-content: center;
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0 auto;
+  width: 160vh;
+  height: 300px;
+  padding: 15px 50px;
+  flex-direction: column;
+  /* position: absolute; */
+  z-index: 100;
+  flex-direction: row;
+  position: sticky;
+  /* height: 200vh; */
+  align-items: center;
+}
+
+.title h1 {
+  /* color: #995dcb; */
+  font-size: 4rem;
+  word-spacing: -4px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.fa-solid,
+.fa-brands {
+  color: grey;
+  opacity: 0.6;
+  font-size: 50px;
+}
+
+/* TRANSITIONS */
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.hiddenleft {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+
+.showleft {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.hiddenright {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(100%);
+  filter: blur(5px);
+}
+.showright {
+  opacity: 1;
+  transform: translateX(0);
+  filter: blur(0);
+}
+
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+  background: transparent;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar__item {
+  height: 60px;
+}
+
+.navbar__links {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 2rem;
+  padding-bottom: 400px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.top-section {
+  text-align: center;
+  padding: 4rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  min-height: 150px;
+}
+
+.line {
+  position: absolute;
+  z-index: 2;
+  left: calc(50% - 1px);
+  width: 2px;
+  top: -50px;
+  bottom: -50px;
+  background-color: black;
+  /* display: none; */
+}
+
+/* .line::before,
+.line::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.line.after {
+  bottom: 0;
+}
+
+.section {
+  display: flex;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: 600ms ease;
+  position: relative;
+  z-index: 1;
+  margin: 50px 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  min-height: 300px;
+}
+
+.section:nth-child(odd) {
+  flex-direction: row-reverse;
+  transform: translateX(100%);
+}
+
+.bead {
+  position: absolute;
+  display: block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: black;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.content {
+  width: calc(50% - 2rem);
+}
+
+.show-me:nth-child(n) {
+  transform: none;
+  opacity: 1;
+}
+
+h2 {
+  color: #995dcb;
+}
+
+.track {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+ul {
+  type: "circle";
+  list-style-position: inside;
+}
+
+.achievements {
+  padding-bottom: 5px;
+}

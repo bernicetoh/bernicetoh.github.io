@@ -5,6 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
+    <link rel="stylesheet" href="education_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:wght@300;400;600&family=Lato&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono&family=Sofia+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8caadc3166.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/projects.html" class="navbar__links">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/education.html" class="navbar__links">Education</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/index.html#connect" class="navbar__links">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="title">
+      <div class="title__container">
+        <h1>Education</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="timeline">
+        <div class="line"></div>
+        <div class="section">
+          <div class="bead"></div>
+          <div class="content">
+            <h2>National University of Singapore</h2>
+            <p class="date">Aug 2021 - May 2025 (Expected)</p>
+            <h3 class="track">Bachelor of Computing in Computer Science</h3>
+            <p class="ul_header" style="font-weight: bold">Awards</p>
+            <ul class="achievements">
+              <li>Recipient of the NUS Merit Scholarship</li>
+            </ul>
+            <ul class="involvements">
+              <li>Member of NUS MedTech Society</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <div class="bead"></div>
+          <div class="content">
+            <h2>Anglo-Chinese School (Independent)</h2>
+            <p class="date">Jan 2019 - Nov 2020</p>
+            <h3 class="track">
+              International Baccalaureate Diploma Program (IBDP)
+            </h3>
+            <p class="ul_header" style="font-weight: bold">Awards</p>
+            <ul class="achievements">
+              <li>
+                Achieved a perfect score for the IBDP examinations (45/45
+                Points)
+              </li>
+              <li>Recipient of the 2021 Academic Award</li>
+              <li>Recipient of the 2020 Edusave Good Progress Award</li>
+            </ul>
+            <p class="ul_header" style="font-weight: bold">Involvements</p>
+            <ul class="involvements">
+              <li>Member of the Netball Team</li>
+              <li>Member of the Ultimate Frisbee Team</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section">
+          <div class="bead"></div>
+          <div class="content">
+            <h2>Chung Cheng High School (Main)</h2>
+            <p class="date">Jan 2015 - Nov 2018</p>
+            <h3 class="track">Singapore-Cambridge GCE 'O' Level</h3>
+            <p class="ul_header" style="font-weight: bold">Awards</p>
+            <ul class="achievements">
+              <li>Recipient of the 2018 Role Model of Learning Award</li>
+              <li>
+                Recipient of the 2018 Edusave Certificate of Academic
+                Achievement
+              </li>
+            </ul>
+            <p class="ul_header" style="font-weight: bold">Involvements</p>
+
+            <ul class="involvements">
+              <li>Member & Events Manager of the Track & Field Team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="timeline.js"></script>
+    <script src="projects_app.js"></script>
+  </body>
 </html>
