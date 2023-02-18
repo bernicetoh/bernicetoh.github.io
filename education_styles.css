@@ -16,14 +16,15 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-
 .navbar ul li a,
 .navbar ul li a:after,
 .navbar ul li a:before {
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
+
 .navbar ul li a:hover {
-  color: #555;
+  /* color: #555; */
+  transform: translateY(5px);
 }
 
 .navbar ul li a {
@@ -38,11 +39,19 @@ a:visited {
   width: 0%;
   content: ".";
   color: transparent;
-  background: #aaa;
+  background: black;
   height: 1px;
 }
 .navbar ul li a:hover:after {
-  width: 100%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.navbar ul li a[aria-current="page"]::after {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
 }
 
 html,
@@ -385,13 +394,9 @@ ul {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .navbar ul li a,
-  .navbar ul li a:after,
-  .navbar ul li a:before {
-    transition: all 0.5s;
-  }
   .navbar ul li a:hover {
-    color: #555;
+    /* color: #555; */
+    transform: translateY(5px);
   }
 
   .navbar ul li a {
@@ -406,11 +411,13 @@ ul {
     width: 0%;
     content: ".";
     color: transparent;
-    background: #aaa;
+    background: black;
     height: 1px;
   }
   .navbar ul li a:hover:after {
-    width: 10%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
   }
 
   .title__container {
