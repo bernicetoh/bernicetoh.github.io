@@ -1,96 +1,4 @@
-const menu = document.querySelector("#mobile-menu");
-const menuLinks = document.querySelector(".navbar__menu");
-const container = document.querySelector(".navbar__container");
-
-menu.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
-  container.classList.toggle("active");
-});
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
-    }
-  });
-});
-
-const observerleft = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("showleft");
-    } else {
-      entry.target.classList.remove("showleft");
-    }
-  });
-});
-
-const observerright = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("showright");
-    } else {
-      entry.target.classList.remove("showright");
-    }
-  });
-});
-
-const hiddenElemenents = document.querySelectorAll(".hidden");
-
-const hiddenElementsleft = document.querySelectorAll(".hiddenleft");
-const hiddenElementsright = document.querySelectorAll(".hiddenright");
-hiddenElemenents.forEach((el) => observer.observe(el));
-
-hiddenElementsleft.forEach((el) => observerleft.observe(el));
-hiddenElementsright.forEach((el) => observerright.observe(el));
-
-gsap.registerPlugin(ScrollTrigger);
-// REVEAL //
-gsap.utils.toArray(".revealUp").forEach(function (elem) {
-  ScrollTrigger.create({
-    trigger: elem,
-    start: "top 80%",
-    end: "bottom 20%",
-    markers: true,
-    onEnter: function () {
-      gsap.fromTo(
-        elem,
-        { y: 100, autoAlpha: 0 },
-        {
-          duration: 1.25,
-          y: 0,
-          autoAlpha: 1,
-          ease: "back",
-          overwrite: "auto",
-        }
-      );
-    },
-    onLeave: function () {
-      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
-    },
-    onEnterBack: function () {
-      gsap.fromTo(
-        elem,
-        { y: -100, autoAlpha: 0 },
-        {
-          duration: 1.25,
-          y: 0,
-          autoAlpha: 1,
-          ease: "back",
-          overwrite: "auto",
-        }
-      );
-    },
-    onLeaveBack: function () {
-      gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
-    },
-  });
-});
-
-const tl = gsap.timeline({ defaults: { ease: "power4.inOut" } });
+const tl = gsap.timeline({ defaults: { ease: "power4.inOut", delay: 0.5 } });
 
 tl.to(".intro", {
   "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
@@ -98,12 +6,16 @@ tl.to(".intro", {
   y: 0,
   duration: 0.6,
 })
-  .to(".intro p", {
-    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-    opacity: 1,
-    y: 0,
-    duration: 1,
-  })
+  .to(
+    ".intro p",
+    {
+      "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+      opacity: 1,
+      y: 0,
+      duration: 1,
+    },
+    "-=1"
+  )
   .to(".aboutme__title", {
     "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
     opacity: 1,
