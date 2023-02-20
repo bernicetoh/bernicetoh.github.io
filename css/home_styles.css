@@ -257,6 +257,7 @@ h1 {
   position: relative;
   justify-content: center;
   word-spacing: -5px;
+  font-size: 4rem;
 }
 
 .intro__greetings :nth-child(2) {
@@ -351,7 +352,7 @@ h1 {
   }
 
   .intro__content h2 {
-    font-size: 1rem;
+    /* font-size: 1rem; */
     /* margin-top: 0.4rem; */
   }
 }
@@ -395,8 +396,9 @@ h1 {
 .skills__title h2 {
   color: black;
   font-weight: 600px;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   word-spacing: -5px;
+  font-size: 2.5rem;
 }
 
 .skills__title h2 {
@@ -637,7 +639,7 @@ h1 {
   font-size: 2.5rem;
   align-items: center;
   justify-content: center;
-  word-spacing: -5px;
+  word-spacing: -2px;
 }
 
 .connect__icons {
@@ -767,7 +769,7 @@ h1 {
   }
 
   .intro__content h1 {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 
   .intro__content p {
@@ -782,7 +784,7 @@ h1 {
   }
 
   .aboutme__title h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     word-spacing: -5px;
   }
 
@@ -806,7 +808,7 @@ h1 {
     margin: 20px auto;
   }
   .skills__title h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     word-spacing: -5px;
   }
 
@@ -923,7 +925,7 @@ h1 {
   }
 
   .projects__title h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .project__name {
@@ -933,14 +935,16 @@ h1 {
   .connect__container {
     width: 100vh;
     padding: 15px 50px;
+    display: flex;
+    align-items: center;
   }
 
   .connect__title h2 {
     width: 85%;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     align-items: center;
     justify-content: center;
-    word-spacing: -5px;
+    word-spacing: -2px;
   }
 
   .connect__icons {
@@ -1040,8 +1044,15 @@ h1 {
     padding: 15px 50px;
   }
 
+  .intro__greetings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .intro__greetings h1 {
-    font-size: 1.6rem;
+    font-size: 3rem;
+    word-spacing: -2px;
   }
 
   .intro__content p {
@@ -1068,8 +1079,8 @@ h1 {
   }
 
   .aboutme__title h2 {
-    font-size: 1.4rem;
-    word-spacing: -5px;
+    /* font-size: 1.4rem; */
+    word-spacing: -3px;
   }
 
   .aboutme__text_container p {
@@ -1097,8 +1108,8 @@ h1 {
   }
 
   .skills__title h2 {
-    font-size: 1.4rem;
-    word-spacing: -5px;
+    /* font-size: 1.4rem; */
+    word-spacing: -3px;
   }
 
   .skills__title p {
@@ -1121,7 +1132,7 @@ h1 {
   .project__card {
     background-color: white;
     width: 450px;
-    height: 200px;
+    height: 220px;
     justify-content: space-around;
     flex-direction: row;
     border-radius: 20px;
@@ -1166,8 +1177,8 @@ h1 {
   }
 
   .project__card:hover {
-    width: 66vh;
-    height: 210px;
+    width: 460px;
+    height: 230px;
   }
 
   .project__desc p {
@@ -1184,7 +1195,7 @@ h1 {
   }
 
   .projects__title h2 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 
   .projects__title p {
@@ -1196,9 +1207,16 @@ h1 {
   }
 
   .connect__title h2 {
-    font-size: 1.4rem;
-    width: 80%;
-    word-spacing: -5px;
+    /* font-size: 1.5rem; */
+    /* width: 80%; */
+    word-spacing: -1px;
+  }
+
+  .connect__title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .connect__container {
@@ -1209,7 +1227,7 @@ h1 {
     margin: 0 auto;
     width: 80%;
     padding: 15px 20px;
-    flex-direction: row;
+    flex-direction: column;
     position: absolute;
   }
 
@@ -1223,19 +1241,19 @@ h1 {
   }
 
   .connect__icon {
-    font-size: 35px;
+    font-size: 45px;
     margin: 0 10px;
     color: #995dcb;
   }
 
   .connect__icons i {
-    line-height: 70px;
+    line-height: 80px;
     margin: 0 10px;
   }
 
   .connect span {
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     display: block;
     border-radius: 50%;
     text-align: center;
@@ -1328,7 +1346,6 @@ h1 {
     display: flex;
     /* position: relative; */
     text-align: left;
-    font-size: 1.8rem;
     word-spacing: -2px;
     /* justify-content: center; */
   }
@@ -1357,7 +1374,7 @@ h1 {
   }
 
   .aboutme__title h2 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     word-spacing: -5px;
   }
 
@@ -1378,7 +1395,7 @@ h1 {
     margin: 20px auto;
   }
   .skills__title h2 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
     word-spacing: -5px;
   }
 
@@ -1513,7 +1530,7 @@ h1 {
     height: 28px;
   }
   .projects__title h2 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .project__name {
@@ -1521,7 +1538,7 @@ h1 {
   }
 
   .projects__title h2 {
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
 
   .projects__title p {
@@ -1536,6 +1553,10 @@ h1 {
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
+  .project__card:hover {
+    width: 410px;
+    height: 210px;
+  }
   .skill__img {
     opacity: 0.6;
     height: 50px;
