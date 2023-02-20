@@ -505,8 +505,51 @@ ul {
   }
 }
 
+@media screen and (max-width: 750px) {
+  .container {
+  }
+  .duke__img {
+    /* height: 650px; */
+    width: 350px;
+  }
+
+  .portfolio .container {
+    flex-direction: column;
+    width: 90vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio .text-container {
+    /* position: relative; */
+    text-align: center;
+    display: flex;
+    /* top: 10%; */
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 300;
+    top: 0%;
+    padding-top: 50px;
+  }
+
+  .portfolio .img-container {
+    flex-direction: column;
+    /* background-color: aqua; */
+    padding-bottom: 20px;
+  }
+
+  .portfolio__img {
+    width: 600px;
+    padding: 10px 0;
+  }
+}
+
 /* MEDIA SCREEN 630PX */
 @media screen and (max-width: 650px) {
+  html {
+    overflow-x: hidden;
+  }
   .menu {
     height: 100vh;
     overflow: hidden;
@@ -581,10 +624,8 @@ ul {
     width: 90%;
     top: 180px;
     padding: 85px 50px;
-    /* flex-direction: column; */
     z-index: 100;
     flex-direction: column;
-    /* height: 200vh; */
     margin-bottom: 300px;
     justify-content: space-evenly;
   }
@@ -597,9 +638,6 @@ ul {
     height: 100%;
     width: 100%;
     justify-content: center;
-    /* align-items: center; */
-    /* padding: 10px 10px; */
-    /* padding: 40px; */
     align-items: center;
   }
 
@@ -657,27 +695,31 @@ ul {
   }
 
   .beez__img {
-    height: 600px;
+    height: 450px;
     /* position: r; */
   }
 
   .morphine__img {
-    height: 650px;
+    height: 450px;
+    /* position: r; */
   }
 
   .duke__img {
     /* height: 650px; */
     width: 400px;
+    /* background-color: aliceblue; */
+    left: 20px;
+    position: relative;
+  }
+
+  .duke .img-container {
+    display: flex;
+    width: 100%;
   }
 
   .javafx_img {
     opacity: 0.6;
     height: 70px;
-  }
-
-  .beez__img {
-    height: 380px;
-    /* position: r; */
   }
 
   .fa-solid,
@@ -708,9 +750,9 @@ ul {
     height: 50px;
   }
 
-  .morphine__img {
-    height: 380px;
-    /* position: r; */
+  .portfolio__img {
+    width: 450px;
+    padding: 10px 0;
   }
 }
 /* MEDIA SCREEN 480PX */
