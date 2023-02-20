@@ -382,6 +382,22 @@ ul {
   margin: 10px 0;
 }
 
+.portfolio__img {
+  width: 700px;
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio__img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .portfolio__img {
+    width: 550px;
+  }
+}
+
 /* MEDIA SCREEN 860PX */
 @media screen and (max-width: 860px) {
   .project {
@@ -483,6 +499,9 @@ ul {
   .javafx_img {
     opacity: 0.6;
     height: 70px;
+  }
+  .portfolio__img {
+    width: 450px;
   }
 }
 
@@ -666,6 +685,22 @@ ul {
     color: grey;
     opacity: 0.6;
     font-size: 40px;
+  }
+
+  .greensock-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .greensock_img {
+    opacity: 0.6;
+    height: 40px;
+    width: 40px;
+  }
+  .greensock-container span {
+    font-size: 0.7rem;
   }
 
   .firebase__img {
