@@ -770,7 +770,6 @@ ul {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
     transform: translateY(100px);
     opacity: 0;
-    background-color: aliceblue;
   }
   .menu.is-dragging {
     cursor: none;
@@ -823,6 +822,10 @@ ul {
     justify-content: space-evenly;
   }
 
+  .portfolio .container {
+    width: 90%;
+  }
+
   .text-container {
     display: flex;
     flex-direction: column;
@@ -865,6 +868,13 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .portfolio .img-container {
+    right: 20px;
+    position: relative;
+    /* align-self: center; */
+    /* background-color: antiquewhite; */
   }
 
   .feature-container {
@@ -915,6 +925,15 @@ ul {
 
   .javafx_img {
     opacity: 0.6;
-    height: 60px;
+    height: 50px;
+  }
+
+  .portfolio__img {
+    width: 300px;
+    padding: 10px 0;
+  }
+
+  .greensock_img {
+    opacity: 0.8;
   }
 }
