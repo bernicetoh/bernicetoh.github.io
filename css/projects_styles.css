@@ -286,6 +286,11 @@ body {
   justify-content: space-evenly;
 }
 
+.portfolio .container {
+  padding-bottom: -20px;
+  margin-bottom: 30px;
+}
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -824,6 +829,7 @@ ul {
 
   .portfolio .container {
     width: 90%;
+    padding-bottom: 10px;
   }
 
   .text-container {

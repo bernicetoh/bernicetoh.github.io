@@ -1321,6 +1321,13 @@ h1 {
         rgba(255, 255, 255, 0) 36%
       );
   }
+
+  .aboutme__title h2,
+  .projects__title h2,
+  .skills__title h2,
+  .connect__title h2 {
+    font-size: 2rem;
+  }
   .intro__container {
     justify-content: center;
     align-items: center;
@@ -1546,16 +1553,16 @@ h1 {
   }
 
   .project__card {
-    width: 400px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     margin: 0 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
   .project__card:hover {
-    width: 410px;
-    height: 210px;
+    width: 350px;
+    height: 250px;
   }
   .skill__img {
     opacity: 0.6;
@@ -1572,12 +1579,12 @@ h1 {
     margin: 0 auto;
     width: 80%;
     /* padding: 15px 20px; */
-    flex-direction: row;
+    flex-direction: column;
     position: absolute;
   }
 
   .connect__icons {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 100%;
@@ -1586,6 +1593,7 @@ h1 {
   .connect__icon {
     font-size: 30px;
     margin: 10px 0px;
+    opacity: 1;
     color: #995dcb;
   }
 
@@ -1599,7 +1607,7 @@ h1 {
     display: block;
     border-radius: 50%;
     text-align: center;
-    margin: 10px 0px;
+    margin: 10px 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }

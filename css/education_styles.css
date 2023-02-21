@@ -154,7 +154,7 @@ body {
 
 .container {
   padding: 2rem;
-  padding-bottom: 400px;
+  padding-bottom: 30px;
   margin: 0 auto;
   max-width: 900px;
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
