@@ -22,6 +22,10 @@ a:visited {
   transition: all 0.2s;
 }
 
+.img-container img {
+  height: 700px;
+}
+
 .navbar ul li a:hover {
   /* color: #555; */
   transform: translateY(5px);

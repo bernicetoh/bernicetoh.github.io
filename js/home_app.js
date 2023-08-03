@@ -70,11 +70,24 @@ tl.to(".intro", {
       scrub: 4,
     },
   })
-  .to(".projects__title", {
+  .to(".lang__list", {
     "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
     opacity: 1,
     y: 0,
     duration: 4,
+    start: "top top",
+    scrollTrigger: {
+      trigger: ".lang__list",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 4,
+    },
+  })
+  .to(".projects__title", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 2,
     start: "top top",
     scrollTrigger: {
       trigger: ".projects__title",
@@ -83,55 +96,22 @@ tl.to(".intro", {
       scrub: 4,
     },
   })
-  .from(".lang__list1", {
-    duration: 3,
-    x: "-50vw",
-    // ease: "linear",
-    "clip-path": "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
-    y: "100px",
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".lang__list1",
-      start: "top 100%",
-      end: "bottom 100%",
-      scrub: 5,
-
-      toggleActions: "restart pause reverse reset",
-    },
-  })
-  .from(".lang__list2", {
-    duration: 3,
-    x: "50vw",
-    // ease: "linear",
-    "clip-path": "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
-    y: "100px",
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".lang__list2",
-      start: "top 100%",
-      end: "bottom 100%",
-      scrub: 5,
-
-      toggleActions: "restart pause reverse reset",
-    },
-  })
   .from(".project__card1", {
     duration: 1,
     x: "-50vw",
-    // ease: "linear",
+    opacity: 0,
     scrollTrigger: {
       trigger: ".project__card1",
       start: "top 100%",
       end: "bottom 80%",
       scrub: 4,
-
       toggleActions: "restart pause reverse reset",
     },
   })
   .from(".project__card2", {
     duration: 1,
     x: "50vw",
-    // ease: "linear",
+    opacity: 0,
 
     scrollTrigger: {
       trigger: ".project__card2",

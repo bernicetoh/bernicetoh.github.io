@@ -80,10 +80,11 @@ gsap.utils.toArray(".revealUp").forEach(function (elem) {
     onEnter: function () {
       gsap.fromTo(
         elem,
-        { y: 100, autoAlpha: 0 },
+        { y: 100, autoAlpha: 0, opacity: 0 },
         {
           duration: 1.25,
           y: 0,
+          opacity: 1,
           autoAlpha: 1,
           ease: "back",
           overwrite: "auto",
