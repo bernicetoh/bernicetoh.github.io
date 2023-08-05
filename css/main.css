@@ -1,3 +1,64 @@
+body {
+  z-index: 0;
+  background: radial-gradient(
+      50px circle at 100px 100px,
+      #ffffff 50%,
+      transparent 51%
+    ),
+    radial-gradient(
+      800px circle at 400px 20px,
+      rgba(153, 93, 203, 0.4) 0%,
+      rgba(255, 255, 255, 0) 30%
+    ),
+    radial-gradient(
+      400px circle at 1200px 250px,
+      rgba(118, 181, 197, 0.3) 0%,
+      rgba(255, 255, 255, 0) 36%
+    ),
+    radial-gradient(
+      600px circle at 100px 500px,
+      rgba(243, 240, 79, 0.3) 0%,
+      rgba(255, 255, 255, 0) 36%
+    ),
+    radial-gradient(
+      500px circle at 1300px 600px,
+      rgba(205, 111, 180, 0.3) 0%,
+      rgba(255, 255, 255, 0) 46%
+    ),
+    radial-gradient(
+      900px circle at 1350px 1550px,
+      rgba(153, 93, 203, 0.2) 0%,
+      rgba(255, 255, 255, 0) 30%
+    ),
+    radial-gradient(
+      700px circle at 250px 1050px,
+      rgba(118, 181, 197, 0.3) 0%,
+      rgba(255, 255, 255, 0) 36%
+    ),
+    radial-gradient(
+      300px circle at 250px 1650px,
+      rgba(205, 111, 180, 0.1) 0%,
+      rgba(255, 255, 255, 0) 46%
+    ),
+    radial-gradient(
+      800px circle at 100px 2350px,
+      rgba(243, 240, 79, 0.2) 0%,
+      rgba(255, 255, 255, 0) 36%
+    ),
+    radial-gradient(
+      700px circle at 1300px 2650px,
+      rgba(118, 181, 197, 0.3) 0%,
+      rgba(255, 255, 255, 0) 36%
+    );
+  animation: move 2s infinite linear;
+}
+
+@keyframes mymove {
+  50% {
+    background-position: center;
+  }
+}
+
 .transition-2 {
   position: fixed;
   top: -100%;
@@ -129,8 +190,11 @@
     z-index: 99;
     font-size: 1.2rem;
     margin-top: 0;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    box-shadow:
+      rgba(0, 0, 0, 0.07) 0px 1px 1px,
+      rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px,
+      rgba(0, 0, 0, 0.07) 0px 8px 8px,
       rgba(0, 0, 0, 0.07) 0px 16px 16px;
   }
   .navbar__menu.active .navbar__links {
