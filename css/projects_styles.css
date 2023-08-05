@@ -150,15 +150,12 @@ li {
 .projects-header {
   display: flex;
   justify-content: center;
-  height: 30vh;
+  /* height: 30vh; */
   align-items: center;
   flex-direction: column;
+  height: 20vh;
 }
-h1 {
-  font-size: 24px;
-  line-height: 120%;
-  margin-bottom: 20px;
-}
+
 .menu {
   /* height: 100vh; */
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
@@ -448,15 +445,20 @@ h1 {
 @media screen and(min-width: 480px) {
   h1 {
     font-size: 3rem;
+    line-height: 120%;
   }
-
   h2 {
     font-size: 24px;
+  }
+  .projects-header {
+    height: 20vh;
   }
 }
 
 @media screen and (min-width: 992px) {
   h1 {
+    line-height: 120%;
+
     font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem);
   }
   h2 {
