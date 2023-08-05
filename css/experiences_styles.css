@@ -176,6 +176,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+.experiences-header {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
 
 .top-section {
   text-align: center;
@@ -294,6 +305,9 @@ ul {
   }
   .section img {
     scale: 2;
+  }
+  h1 {
+    font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem);
   }
 }
 @media screen and (max-width: 860px) {
@@ -438,7 +452,7 @@ ul {
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
 
   p {

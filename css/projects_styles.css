@@ -147,12 +147,24 @@ li {
   justify-content: center;
 }
 
+.projects-header {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 24px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
 .menu {
   /* height: 100vh; */
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   transform: translateY(100px);
   opacity: 0;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,7 +447,7 @@ li {
 /* MEDIA SCREEN 480PX */
 @media screen and(min-width: 480px) {
   h1 {
-    font-size: 28px;
+    font-size: 3rem;
   }
 
   h2 {
@@ -445,7 +457,7 @@ li {
 
 @media screen and (min-width: 992px) {
   h1 {
-    font-size: 40px;
+    font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem);
   }
   h2 {
     font-size: 30px;
@@ -514,7 +526,7 @@ li {
     padding: 0 200px;
   }
   .img-container img {
-    height: 700px;
+    height: 600px;
   }
 
   .topBtn-container {
