@@ -71,6 +71,7 @@ body {
 
 h2 {
   font-size: 20px;
+  text-align: center;
 }
 
 p,
@@ -290,6 +291,45 @@ li {
 }
 .project-title {
   margin-bottom: 20px;
+  color: black;
+}
+
+.github-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  /* background-color: #995dcb; */
+  border-radius: 15px;
+  padding: 5px 15px;
+  border: 2px solid gray;
+  margin-bottom: 25px;
+  background: transparent; /* default color */
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, transparent 50%, #995dcb 50%) right;
+  background-size: 200%;
+  transition: 0.2s ease-out;
+}
+
+.github-link i {
+  font-size: 30px;
+  color: grey;
+}
+
+.github-link p {
+  color: grey;
+}
+
+.github-link:hover {
+  background-position: left;
+}
+.github-link:hover p {
+  color: white;
+}
+
+.github-link:hover i {
+  color: white;
 }
 
 .img-container {
@@ -354,6 +394,32 @@ li {
   color: grey;
 }
 
+.github__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github__link a {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #995dcb;
+  border-radius: 15px;
+  padding: 10px 10px;
+  column-gap: 10px;
+  width: fit-content;
+}
+
+.github__link i {
+  color: white;
+  font-size: 30px;
+}
+.github__link p {
+  color: white;
+}
 /* MEDIA SCREEN 480PX */
 @media screen and(min-width: 480px) {
   h1 {
@@ -371,6 +437,7 @@ li {
   }
   h2 {
     font-size: 30px;
+    text-align: left;
   }
   p,
   li {
