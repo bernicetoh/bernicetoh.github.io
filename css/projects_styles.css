@@ -78,6 +78,7 @@ li {
   font-size: 14px;
   text-align: center;
 }
+
 /* NAVIGATION BAR */
 .navbar {
   background: transparent;
@@ -134,58 +135,12 @@ li {
   justify-content: center;
 }
 
-.scroll {
-  display: flex;
-
-  margin-bottom: 150px;
-
-  position: relative;
-  justify-content: center;
-}
-
-.scroll a:link {
-  text-decoration: none;
-}
-.scroll a:visited {
-  text-decoration: none;
-}
-
-.scroll__links {
-  color: black;
-}
-
-.scroll__container,
-.scroll__page {
-  background-color: lightgrey;
-  max-width: 850px;
-  margin: 0 auto;
-  height: 80px;
-  width: 450px;
-  font-size: 2.5rem;
-  border-radius: 50px;
-}
-
-.scroll__container {
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-}
-
-.scroll__page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  scroll-snap-align: start;
-  animation: animate 5s linear;
-
-  /* height: 150px; */
-}
-
 .menu {
   /* height: 100vh; */
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
   transform: translateY(100px);
   opacity: 0;
-  height: 600px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -199,7 +154,8 @@ li {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 87%;
-  margin-left: 92%;
+  margin-left: 85%;
+
   z-index: 199;
   cursor: pointer;
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
@@ -480,5 +436,9 @@ li {
   }
   .img-container img {
     height: 700px;
+  }
+
+  .topBtn-container {
+    margin-left: 90%;
   }
 }
