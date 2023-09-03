@@ -40,6 +40,9 @@ a:visited {
 .img-container img {
   height: 280px;
 }
+.img-container .webapp {
+  height: 300px;
+}
 
 .img-container-wavescan {
   display: flex;
@@ -192,6 +195,27 @@ li {
   cursor: grabbing;
 }
 
+.links {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.direct {
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+
+.direct i {
+  height: 44px;
+}
+.direct i:hover {
+  color: #995dcb;
+  transition: ease-in-out 0.2s;
+}
 .topBtn-container {
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -290,6 +314,7 @@ li {
 
 .menu--item a:hover {
   font-weight: bold;
+  transition: ease-in-out 0.2s;
 }
 
 .project {
@@ -347,6 +372,21 @@ li {
   margin-bottom: 25px;
   background: transparent; /* default color */
 
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, transparent 50%, #995dcb 50%) right;
+  background-size: 200%;
+  transition: 0.2s ease-out;
+}
+.github-link-bean {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  /* background-color: #995dcb; */
+  border-radius: 15px;
+  padding: 5px 15px;
+  border: 2px solid gray;
+  background: transparent; /* default color */
   /* "to left" / "to right" - affects initial color */
   background: linear-gradient(to left, transparent 50%, #995dcb 50%) right;
   background-size: 200%;
@@ -461,7 +501,6 @@ li {
 .github__link p {
   color: white;
 }
-
 /* MEDIA SCREEN 480PX */
 @media screen and(min-width: 480px) {
   h1 {
@@ -473,6 +512,9 @@ li {
   }
   .projects-header {
     height: 20vh;
+  }
+  .img-container .webapp {
+    width: 100%;
   }
 }
 
@@ -515,6 +557,9 @@ li {
   .img-container img {
     height: 500px;
   }
+  .img-container .webapp {
+    height: 400px;
+  }
   .tech__stack {
     /* align-items: start; */
     justify-content: start;
@@ -551,7 +596,7 @@ li {
     margin-right: 0;
   }
   .gif {
-    scale: 0.8;
+    /* scale: 0.8; */
   }
 }
 
@@ -563,6 +608,9 @@ li {
     height: 600px;
   }
 
+  .img-container .webapp {
+    height: 500px;
+  }
   .topBtn-container {
     margin-left: 90%;
   }
