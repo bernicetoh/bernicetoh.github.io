@@ -437,6 +437,10 @@ li {
   align-items: center;
 }
 
+.add-desc-container {
+  text-align: center;
+  margin-top: 20px;
+}
 .tech__stack {
   padding: 10px 0px;
   display: flex;
@@ -551,7 +555,8 @@ li {
   .feature-container {
     align-items: start;
   }
-  .feature-container ul {
+  .feature-container ul,
+  .add-desc-container {
     align-items: start;
   }
   .img-container img {
