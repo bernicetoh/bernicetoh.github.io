@@ -100,7 +100,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 h2 {
   font-size: 20px;
@@ -178,6 +178,9 @@ li {
   height: 20vh;
   row-gap: 10px;
   margin-bottom: 10px;
+}
+.projects-header > img {
+  height: 80px;
 }
 
 .menu {
@@ -505,10 +508,31 @@ li {
 .github__link p {
   color: white;
 }
+
+.categories-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.categories {
+  justify-self: center;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.category-card {
+  width: 100%;
+  padding: 10px;
+}
+.category-header {
+  font-weight: bold;
+}
 /* MEDIA SCREEN 480PX */
 @media screen and(min-width: 480px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     line-height: 120%;
   }
   h2 {
@@ -525,8 +549,8 @@ li {
 @media screen and (min-width: 992px) {
   h1 {
     line-height: 120%;
-
-    font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem);
+    font-size: 3rem;
+    /* font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem); */
   }
   h2 {
     font-size: 30px;

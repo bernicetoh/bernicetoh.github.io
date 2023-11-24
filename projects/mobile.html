@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bernice Toh | Web Projects</title>
+    <link rel="stylesheet" href="./../css/projects_styles.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:wght@300;400;600&family=Lato&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono&family=Sofia+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8caadc3166.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="transition transition-2 is-active">
+      <p class="transition-text hidden">Projects</p>
+    </div>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item" id="navbar__item">
+            <a href="/index.html" class="navbar__links" id="navbar__links"
+              >Home</a
+            >
+          </li>
+          <li class="navbar__item" id="navbar__item">
+            <a href="/projects.html" aria-current="page" class="navbar__links"
+              >Projects</a
+            >
+          </li>
+          <!-- <li class="navbar__item" id="navbar__item">
+              <a href="/experiences.html" class="navbar__links">Experiences</a>
+            </li> -->
+          <li class="navbar__item" id="navbar__item">
+            <a href="/index.html#connect" class="navbar__links">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="beez revealUp project" id="beez">
+      <div class="container">
+        <div class="text-container">
+          <div class="project-title">
+            <a
+              class="github-link"
+              href="https://github.com/bernicetoh/beezeebeez"
+              target="_blank"
+              style="color: black"
+              ><i class="fa-brands fa-github"></i>
+              <p>Go to GitHub</p>
+            </a>
+            <h2>beezeebeez</h2>
+          </div>
+          <div class="desc-text-container">
+            <p>
+              A productivity mobile application that aims to provide an
+              all-in-one platform that serves to increase user's productivity
+              levels.
+            </p>
+            <div class="feature-container">
+              <p class="feature-title">Key features:</p>
+              <ul>
+                <li>Create a calendar event</li>
+                <li>Track habits and expenses</li>
+                <li>Create todo tasks</li>
+                <li>Chat one-to-one in real-time</li>
+              </ul>
+            </div>
+
+            <div class="tech__stack">
+              <i class="fa-brands fa-square-js tech__stack_icon"></i>
+              <i class="fa-brands fa-react tech__stack_icon"></i>
+              <img
+                src="../images/firebase.png"
+                alt=""
+                class="firebase__img tech__stack_icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="../images/beez/fillbeez-3.png" />
+          <img src="../images/beez/fillbeez.png" />
+          <img src="../images/beez/fillbeez-4.png" />
+          <img src="../images/beez/fillbeez-5.png" />
+          <img src="../images/beez/fillbeez-1.png" />
+          <img src="../images/beez/fillbeez-2.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="morphine revealUp project" id="morphine">
+      <div class="container">
+        <div class="text-container">
+          <div class="project-title">
+            <a
+              class="github-link"
+              href="https://github.com/bernicetoh/morphine"
+              target="_blank"
+              style="color: black"
+              ><i class="fa-brands fa-github"></i>
+              <p>Go to GitHub</p>
+            </a>
+            <h2>FallGuard SOS</h2>
+          </div>
+          <div class="desc-text-container">
+            <p>
+              A service mobile application that goes hand-in-hand with an
+              external fall detection device. Through real-time updates,
+              guardians can stay informed about their senior's well-being,
+              allowing them to provide immediate help when needed.
+            </p>
+            <div class="feature-container">
+              <p class="feature-title">Key features:</p>
+              <ul>
+                <li>
+                  Track fall detection device with real-time GPS tracking system
+                </li>
+                <li>Notify guardian when a fall is detected</li>
+                <li>Notify guardian when the panic button is activated</li>
+                <li>Provide immediate access to relevant contacts</li>
+              </ul>
+            </div>
+            <div class="tech__stack">
+              <i class="fa-brands fa-square-js tech__stack_icon"></i>
+              <i class="fa-brands fa-react tech__stack_icon"></i>
+              <img
+                src="../images/firebase.png"
+                alt=""
+                class="firebase__img tech__stack_icon"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="../images/fallguard/fillfallguard-2.png" />
+          <img src="../images/fallguard/fillfallguard-5.png" />
+          <img src="../images/fallguard/fillfallguard-4.png" />
+          <img src="../images/fallguard/fillfallguard.png" />
+          <img src="../images/fallguard/fillfallguard-1.png" />
+          <img src="../images/fallguard/fillfallguard-3.png" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="./../js/projects_app.js"></script>
+    <script src="./../js/main.js"></script>
+  </body>
+</html>
