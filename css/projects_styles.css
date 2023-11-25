@@ -51,6 +51,31 @@ a:visited {
   width: 100%;
 }
 
+.right-side {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden-image {
+  display: none;
+  position: absolute;
+  width: 500px;
+  background-color: white;
+  height: 600px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  opacity: 0; /* Start with zero opacity */
+  transition: ease-in-out 1s; /* Move transition property here */
+}
+
+.right-side:hover .hidden-image {
+  display: block;
+  opacity: 1;
+}
+
 .gif {
   border-radius: 10px;
   width: 100%;
@@ -107,6 +132,20 @@ h2 {
   text-align: center;
 }
 
+.back {
+  display: flex;
+  gap: 10px;
+  transform: translateX(10px);
+  transition: 0.2s ease-out;
+  .fa-arrow-left {
+    font-size: 25px;
+    margin-left: 40px;
+  }
+}
+
+.back:hover {
+  transform: translateX(0px);
+}
 p,
 li {
   font-size: 14px;
@@ -450,6 +489,10 @@ li {
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: 10px;
+}
+.tech__header {
+  font-weight: 600;
 }
 
 .tech__stack_icon {
@@ -521,13 +564,42 @@ li {
   width: 80%;
   justify-content: space-evenly;
   padding: 20px;
+  gap: 10px;
 }
 .category-card {
-  width: 100%;
+  /* width: 100%; */
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  align-items: flex-end;
+  width: 400px;
+}
+.category-img {
+  justify-self: end;
+  scale: 0.8;
 }
 .category-header {
   font-weight: bold;
+  align-self: flex-start;
+}
+
+.explore-arrow {
+  background: transparent; /* default color */
+  /* "to left" / "to right" - affects initial color */
+  transition: 0.2s ease-out;
+  margin-top: 10px;
+  transform: translateX(-10px);
+  .fa-arrow-right {
+    font-size: 25px;
+  }
+}
+
+.explore-arrow:hover {
+  transform: translateX(0px);
+  .fa-arrow-right {
+    color: #995dcb;
+  }
 }
 /* MEDIA SCREEN 480PX */
 @media screen and(min-width: 480px) {
@@ -582,6 +654,7 @@ li {
   .feature-container ul,
   .add-desc-container {
     align-items: start;
+    text-align: left;
   }
   .img-container img {
     height: 500px;
