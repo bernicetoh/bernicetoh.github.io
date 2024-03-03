@@ -82,7 +82,7 @@ h1 {
   clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   opacity: 1;
   transform: translateY(0px);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .circle_body {
@@ -235,6 +235,8 @@ h1 {
   justify-content: center;
   align-self: center;
   padding: 0 50px;
+  display: flex;
+  align-items: center;
 }
 
 .intro__content p {
@@ -250,15 +252,36 @@ h1 {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
+.intro__greetings_first {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro__greetings img {
+  width: 80px;
+}
+.intro__greetings h1 {
+  width: 100%;
+}
 .intro__greetings p {
   font-size: 14px;
   line-height: 25px;
+  text-align: center;
+  width: 100%;
+  display: flex;
 }
+
 .intro__content {
   z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro__content h2 {
@@ -292,11 +315,36 @@ h1 {
 .aboutme__content h2 {
   font-size: 20px;
 }
+.aboutme__images {
+  display: flex;
+  /* width: 30px; */
+  /* height: 300px; */
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: row;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transform: translateY(100px);
+  opacity: 0;
+}
+.matcha {
+  /* height: 100%; */
+  width: 20%;
+  /* height: auto; */
+  z-index: 0;
+  display: flex;
+}
+.crime {
+  width: auto;
+  height: 100%;
+}
+
 .profile_round {
   display: inline;
   margin: 0 auto;
-  height: 250px;
-  width: auto;
+  width: 300px;
+  height: auto;
   clip-path: circle(0.5% at 50% 50%);
   opacity: 0;
   transform: translateY(100px);
@@ -517,10 +565,6 @@ h1 {
   line-height: 120%; /* 16.8px */
 }
 
-.project__card:hover .project__name {
-  font-size: 22px;
-  transition: ease-in-out 0.2s;
-}
 .project__img_bee {
   width: 100px;
   opacity: 0.8;
@@ -659,7 +703,7 @@ h1 {
 
 @media screen and (min-width: 480px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .aboutme__content h2,
@@ -694,9 +738,32 @@ h1 {
   }
 }
 
+@media screen and (min-width: 560px) {
+  .intro__content {
+    flex-direction: row;
+  }
+  .intro__greetings h1 {
+    text-align: left;
+  }
+  .intro__subtitle p {
+    text-align: left;
+    width: 80%;
+  }
+  .profile_round {
+    height: 300px;
+  }
+  .aboutme__images {
+    width: 80%;
+  }
+  .intro__greetings_first {
+    flex-direction: row-reverse;
+    width: max-content;
+  }
+}
+
 @media screen and (min-width: 992px) {
   h1 {
-    font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem);
+    font-size: 4rem;
   }
   .connect__title {
     width: 50%;
@@ -722,16 +789,12 @@ h1 {
   .skills__content,
   .projects__content,
   .connect__container {
-    padding: 0 100px;
+    padding: 50px 100px;
   }
 
   .aboutme__text_container {
     flex-direction: row;
     flex-wrap: nowrap;
-  }
-
-  .aboutme__text_container p {
-    text-align: left;
   }
 
   .lang__list {
@@ -777,5 +840,11 @@ h1 {
 
   .connect__icon {
     font-size: 40px;
+  }
+  /* .profile_round {
+    height: 40%;
+  } */
+  .aboutme__images {
+    width: 60%;
   }
 }

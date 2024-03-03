@@ -67,12 +67,12 @@
         </div>
       </div>
     </div> -->
-    <div class="projects-header">
-      <img src="./images/sparkle.svg" />
-      <h1>Projects</h1>
-    </div>
+    <div class="projects">
+      <div class="projects-header">
+        <h1>Projects</h1>
+      </div>
 
-    <!-- <div class="menu">
+      <!-- <div class="menu">
       <ul class="menu--wrapper">
         <li class="menu--item">
           <a href="./projects.html#wavescan">WaveScan's website</a>
@@ -99,424 +99,67 @@
         </li>
       </ul>
     </div> -->
-    <div class="categories-container">
-      <div class="categories">
-        <div class="category-card">
-          <div class="category-header">Web</div>
-          <div>
-            This exploration involves not only crafting visually appealing and
-            intuitive user interfaces but also delving into the underlying
-            server-side logic and database management.
+      <div class="categories-container">
+        <div class="categories">
+          <div class="category-card">
+            <div>
+              <div class="category-top">
+                <div class="category-header">Web</div>
+                <a href="projects/web.html" class="explore-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div>
+                This exploration involves not only crafting visually appealing
+                and intuitive user interfaces but also delving into the
+                underlying server-side logic and database management.
+              </div>
+            </div>
+            <img class="category-img" src="./images/projects/web.png" />
           </div>
-          <a href="projects/web.html" class="explore-arrow"
-            ><i class="fa-solid fa-arrow-right"></i>
-          </a>
 
-          <img class="category-img" src="./images/projects/web.png" />
-        </div>
+          <div class="category-card">
+            <div>
+              <div class="category-top">
+                <div class="category-header">Mobile</div>
+                <a href="projects/mobile.html" class="explore-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div>
+                Through hands-on experience, I adeptly navigated the dynamic
+                landscape of mobile app creation, immersing myself in the
+                intricate process of bringing digital pocket innovations to
+                life.
+              </div>
+            </div>
 
-        <div class="category-card">
-          <div class="category-header">Mobile</div>
-          <div>
-            Through hands-on experience, I adeptly navigated the dynamic
-            landscape of mobile app creation, immersing myself in the intricate
-            process of bringing digital pocket innovations to life.
+            <img class="category-img" src="./images/projects/iphone.png" />
           </div>
-          <a href="projects/mobile.html" class="explore-arrow"
-            ><i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <img class="category-img" src="./images/projects/iphone.png" />
-        </div>
 
-        <div class="category-card">
-          <div class="category-header">Design</div>
-          <div>
-            Being one that prioritizes user-centric excellence and deeply
-            appreciates captivating designs, this category showcases projects
-            that I have undertaken that my attempt at elevating the art of
-            functionality.
+          <div class="category-card">
+            <div>
+              <div class="category-top">
+                <div class="category-header">Design</div>
+                <a href="projects/design.html" class="explore-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+
+              <div>
+                Being one that prioritizes user-centric excellence and deeply
+                appreciates captivating designs, this category showcases
+                projects that I have undertaken that my attempt at elevating the
+                art of functionality.
+              </div>
+            </div>
+            <img class="category-img" src="./images/projects/design.png" />
           </div>
-          <a href="projects/design.html" class="explore-arrow"
-            ><i class="fa-solid fa-arrow-right"></i>
-          </a>
-          <img class="category-img" src="./images/projects/design.png" />
         </div>
       </div>
     </div>
 
-    <div class="topBtn-container">
-      <button onclick="topFunction()" id="topBtn" title="Go to top">
-        <i class="fa-solid fa-chevron-up"></i>
-      </button>
-    </div>
 
-    <div class="wavescan revealUp project" id="wavescan">
-      <div class="container">
-        <div class="text-container">
-          <div class="project-title">
-            <h2>WaveScan Technologies' Website</h2>
-          </div>
-          <div class="desc-text-container">
-            <p>
-              During my internship as a frontend developer at WaveScan, I
-              bolstered and integrated novel features into the comapny's
-              website.
-            </p>
-
-            <div class="tech__stack">
-              <img
-                src="./images/typescript.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-              <i class="fa-brands fa-react tech__stack_icon"></i>
-              <i class="fa-brands fa-css3-alt tech__stack_icon"></i>
-            </div>
-          </div>
-        </div>
-        <div class="img-container-wavescan">
-          <img src="./images/wavescan/wavescan.png" class="gif" />
-        </div>
-      </div>
-    </div>
-
-    <div class="beanthere revealUp project" id="beanthere">
-      <div class="container">
-        <div class="text-container">
-          <div class="project-title">
-            <div class="links">
-              <a
-                class="github-link"
-                href="https://github.com/bernicetoh/bean-there"
-                target="_blank"
-                style="color: black"
-                ><i class="fa-brands fa-github"></i>
-                <p>Go to GitHub</p>
-              </a>
-              <a
-                class="direct"
-                href="https://bean-there.onrender.com/"
-                target="_blank"
-              >
-                <i class="fa-solid fa-square-arrow-up-right"></i>
-              </a>
-            </div>
-
-            <h2>Bean There</h2>
-          </div>
-          <div class="desc-text-container">
-            <p>
-              A fullstack web application that serves as a hub for coffee
-              enthusiasts to explore and critique coffee spots.
-            </p>
-            <div class="feature-container">
-              <p class="feature-title">Key features:</p>
-              <ul>
-                <li>Create an account with Bean There</li>
-                <li>
-                  Post a review of a coffee spot (only if you are logged in!)
-                </li>
-                <li>Browse reviews created by other members of Bean There</li>
-                <li>Get the average rating of a coffee spot</li>
-                <li>Locate the best rated coffee spot near you</li>
-              </ul>
-            </div>
-
-            <div class="tech__stack">
-              <img
-                src="./images/typescript.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-              <i class="fa-brands fa-react tech__stack_icon"></i>
-              <i class="fa-brands fa-css3-alt tech__stack_icon"></i>
-              <i class="fa-brands fa-node-js tech__stack_icon"></i>
-              <img
-                src="./images/mongodb.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="img-container-wavescan">
-          <img src="images/beanthere/beantheress1.png" class="gif" />
-        </div>
-      </div>
-    </div>
-
-    <div class="peerprep revealUp project" id="peerprep">
-      <div class="container">
-        <div class="text-container">
-          <div class="project-title">
-            <div class="links">
-              <a
-                class="github-link"
-                href="https://github.com/bernicetoh/peerprep"
-                target="_blank"
-                style="color: black"
-                ><i class="fa-brands fa-github"></i>
-                <p>Go to GitHub</p>
-              </a>
-              <a
-                class="direct"
-                href="http://34.87.154.192:4173/#/auth"
-                target="_blank"
-              >
-                <i class="fa-solid fa-square-arrow-up-right"></i>
-              </a>
-            </div>
-
-            <h2>PeerPrep</h2>
-          </div>
-          <div class="desc-text-container">
-            <p>
-              The ultimate hub for collaborative learning and problem-solving
-              👨‍💻. A fullstack web application developed done for the module
-              CS3219 Software Engineering Principles and Patterns.
-            </p>
-            <div class="feature-container">
-              <p class="feature-title">Key features:</p>
-              <ul>
-                <li>
-                  Get matched with a partner based on your question preferences
-                </li>
-                <li>
-                  Tackle whiteboard style technical questions together with our
-                  collaborative code editor and whiteboard
-                </li>
-                <li>Chat in real-time with your partner</li>
-                <li>View your history session to review your past attempts</li>
-              </ul>
-            </div>
-
-            <div class="tech__stack">
-              <i class="fa-brands fa-react tech__stack_icon"></i>
-              <i class="fa-brands fa-css3-alt tech__stack_icon"></i>
-              <i class="fa-brands fa-node-js tech__stack_icon"></i>
-              <img
-                src="./images/mongodb.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="img-container-wavescan">
-          <img src="images/peerprep/peerprep.png" class="gif" />
-        </div>
-      </div>
-    </div>
-
-    <div class="llama revealUp project" id="llama">
-      <div class="container">
-        <div class="text-container">
-          <div class="project-title">
-            <div class="links">
-              <a
-                class="github-link"
-                href="https://github.com/bernicetoh/llama-lunch"
-                target="_blank"
-                style="color: black"
-                ><i class="fa-brands fa-github"></i>
-                <p>Go to GitHub</p>
-              </a>
-            </div>
-
-            <h2>LlaMa Lunch</h2>
-          </div>
-          <div class="desc-text-container">
-            <p>
-              An interactive AI-cook assistant designed to inspire you with
-              recipe ideas based on your input ingredients.
-            </p>
-            <div class="add-desc-container">
-              <p>
-                In addition to delving into the intricacies of the Large
-                Language Model, LlaMa, I took the initiative to conceive and
-                implement an interactive chatbot seamlessly integrated with its
-                successor, LlaMa2. The primary objective was to generate
-                personalized recipes based on user-input ingredients. Rigorous
-                fine-tuning of the LlaMa2 model was undertaken to ensure the
-                realization of our team's specific goals. This undertaking
-                served as a pivotal use-case within the framework of an
-                exploratory project centered around Large Language Models.
-              </p>
-            </div>
-
-            <div class="tech__stack">
-              <img
-                src="./images/typescript.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-              <i class="fa-brands fa-react tech__stack_icon"></i>
-              <i class="fa-brands fa-css3-alt tech__stack_icon"></i>
-              <i class="fa-brands fa-python skills__icon" col></i>
-              <img
-                src="./images/flask.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="img-container-wavescan">
-          <img src="images/llama/llama.png" class="gif" />
-        </div>
-      </div>
-    </div>
-
-    <div class="beez revealUp project" id="beez">
-      <div class="container">
-        <div class="text-container">
-          <div class="project-title">
-            <a
-              class="github-link"
-              href="https://github.com/bernicetoh/beezeebeez"
-              target="_blank"
-              style="color: black"
-              ><i class="fa-brands fa-github"></i>
-              <p>Go to GitHub</p>
-            </a>
-            <h2>beezeebeez</h2>
-          </div>
-          <div class="desc-text-container">
-            <p>
-              A productivity mobile application that aims to provide an
-              all-in-one platform that serves to increase user's productivity
-              levels.
-            </p>
-            <div class="feature-container">
-              <p class="feature-title">Key features:</p>
-              <ul>
-                <li>Create a calendar event</li>
-                <li>Track habits and expenses</li>
-                <li>Create todo tasks</li>
-                <li>Chat one-to-one in real-time</li>
-              </ul>
-            </div>
-
-            <div class="tech__stack">
-              <i class="fa-brands fa-square-js tech__stack_icon"></i>
-              <i class="fa-brands fa-react tech__stack_icon"></i>
-              <img
-                src="./images/firebase.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="img-container">
-          <img src="images/beez/fillbeez-3.png" />
-          <img src="images/beez/fillbeez.png" />
-          <img src="images/beez/fillbeez-4.png" />
-          <img src="images/beez/fillbeez-5.png" />
-          <img src="images/beez/fillbeez-1.png" />
-          <img src="images/beez/fillbeez-2.png" />
-        </div>
-      </div>
-    </div>
-
-    <div class="morphine revealUp project" id="morphine">
-      <div class="container">
-        <div class="text-container">
-          <div class="project-title">
-            <a
-              class="github-link"
-              href="https://github.com/bernicetoh/morphine"
-              target="_blank"
-              style="color: black"
-              ><i class="fa-brands fa-github"></i>
-              <p>Go to GitHub</p>
-            </a>
-            <h2>FallGuard SOS</h2>
-          </div>
-          <div class="desc-text-container">
-            <p>
-              A service mobile application that goes hand-in-hand with an
-              external fall detection device. Through real-time updates,
-              guardians can stay informed about their senior's well-being,
-              allowing them to provide immediate help when needed.
-            </p>
-            <div class="feature-container">
-              <p class="feature-title">Key features:</p>
-              <ul>
-                <li>
-                  Track fall detection device with real-time GPS tracking system
-                </li>
-                <li>Notify guardian when a fall is detected</li>
-                <li>Notify guardian when the panic button is activated</li>
-                <li>Provide immediate access to relevant contacts</li>
-              </ul>
-            </div>
-            <div class="tech__stack">
-              <i class="fa-brands fa-square-js tech__stack_icon"></i>
-              <i class="fa-brands fa-react tech__stack_icon"></i>
-              <img
-                src="./images/firebase.png"
-                alt=""
-                class="firebase__img tech__stack_icon"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="img-container">
-          <img src="images/fallguard/fillfallguard-2.png" />
-          <img src="images/fallguard/fillfallguard-5.png" />
-          <img src="images/fallguard/fillfallguard-4.png" />
-          <img src="images/fallguard/fillfallguard.png" />
-          <img src="images/fallguard/fillfallguard-1.png" />
-          <img src="images/fallguard/fillfallguard-3.png" />
-        </div>
-      </div>
-    </div>
-
-    <div class="duke revealUp project" id="duke">
-      <div class="container">
-        <div class="text-container">
-          <div class="project-title">
-            <a
-              class="github-link"
-              href="https://github.com/bernicetoh/ip"
-              target="_blank"
-              style="color: black"
-              ><i class="fa-brands fa-github"></i>
-              <p>Go to GitHub</p>
-            </a>
-            <h2>Duke</h2>
-          </div>
-          <div class="desc-text-container">
-            <p>
-              A desktop application for managing your tasks via a Command Lind
-              Interface (CLI) while still having the benefits of a Graphical
-              User Interface (GUI).
-            </p>
-
-            <div class="feature-container">
-              <p class="feature-title">Key features:</p>
-              <ul>
-                <li>Create a todo task</li>
-                <li>Create an event</li>
-                <li>Create a deadline</li>
-                <li>Mark a task</li>
-                <li>Prioritize a task</li>
-              </ul>
-            </div>
-            <div class="tech__stack">
-              <i class="fa-brands fa-java tech__stack_icon"></i>
-              <img src="./images/javafx-logo.png" alt="" class="javafx_img" />
-            </div>
-          </div>
-        </div>
-        <div class="img-container">
-          <img src="./images/dukess2.png" alt="" />
-          <img src="./images/dukess3.png" alt="" />
-        </div>
-      </div>
-    </div>
-  
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
       <script src="./js/projects_app.js"></script>
