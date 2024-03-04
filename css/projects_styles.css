@@ -25,6 +25,10 @@ html,
 body {
   overflow-x: clip;
 }
+
+em {
+  color: gray;
+}
 a:link {
   text-decoration: none;
 }
@@ -37,6 +41,12 @@ a:visited {
   transition: all 0.2s;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
 .img-container img {
   height: 280px;
 }
@@ -49,6 +59,35 @@ a:visited {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.design .img-container {
+  gap: 20px;
+  margin: 20px 0px;
+}
+.right-side {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden-image {
+  display: none;
+  position: absolute;
+  width: 500px;
+  background-color: white;
+  height: 600px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  opacity: 0; /* Start with zero opacity */
+  transition: ease-in-out 1s; /* Move transition property here */
+}
+
+.right-side:hover .hidden-image {
+  display: block;
+  opacity: 1;
 }
 
 .gif {
@@ -100,13 +139,27 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 h2 {
   font-size: 20px;
   text-align: center;
 }
 
+.back {
+  display: flex;
+  gap: 10px;
+  transform: translateX(10px);
+  transition: 0.2s ease-out;
+  .fa-arrow-left {
+    font-size: 25px;
+    margin-left: 40px;
+  }
+}
+
+.back:hover {
+  transform: translateX(0px);
+}
 p,
 li {
   font-size: 14px;
@@ -172,14 +225,16 @@ li {
 .projects-header {
   display: flex;
   justify-content: center;
-  /* height: 30vh; */
+  height: 15vh;
   align-items: center;
   flex-direction: column;
-  height: 20vh;
   row-gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
+/*  */
 .menu {
   /* height: 100vh; */
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
@@ -444,9 +499,13 @@ li {
 .tech__stack {
   padding: 10px 0px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
+  gap: 10px;
+}
+.tech__header {
+  font-weight: 600;
 }
 
 .tech__stack_icon {
@@ -505,10 +564,70 @@ li {
 .github__link p {
   color: white;
 }
+
+.categories-container {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+}
+.categories {
+  justify-self: center;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  /* padding: 20px; */
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.category-card {
+  /* width: 100%; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  align-items: flex-end;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.category-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-img {
+  justify-self: end;
+  scale: 0.8;
+}
+.category-header {
+  font-weight: bold;
+}
+
+.explore-arrow {
+  background: transparent; /* default color */
+  /* "to left" / "to right" - affects initial color */
+  transition: 0.2s ease-out;
+  margin-top: 10px;
+  transform: translateX(-10px);
+  .fa-arrow-right {
+    font-size: 25px;
+  }
+}
+
+.explore-arrow:hover {
+  transform: translateX(0px);
+  .fa-arrow-right {
+    color: #995dcb;
+  }
+}
 /* MEDIA SCREEN 480PX */
 @media screen and(min-width: 480px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     line-height: 120%;
   }
   h2 {
@@ -525,8 +644,8 @@ li {
 @media screen and (min-width: 992px) {
   h1 {
     line-height: 120%;
-
-    font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem);
+    font-size: 3rem;
+    /* font-size: clamp(3.2rem, 0.5692rem + 8.238vw, 13.75rem); */
   }
   h2 {
     font-size: 30px;
@@ -558,6 +677,7 @@ li {
   .feature-container ul,
   .add-desc-container {
     align-items: start;
+    text-align: left;
   }
   .img-container img {
     height: 500px;
@@ -605,6 +725,9 @@ li {
   }
   .gif {
     /* scale: 0.8; */
+  }
+  .links {
+    justify-content: left;
   }
 }
 

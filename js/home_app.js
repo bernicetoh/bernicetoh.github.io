@@ -57,6 +57,19 @@ tl.to(".intro", {
       scrub: 4,
     },
   })
+  .to(".aboutme__images", {
+    "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    opacity: 1,
+    y: 0,
+    duration: 2,
+    start: "top top",
+    scrollTrigger: {
+      trigger: ".aboutme__text_container",
+      start: "top 90%",
+      end: "bottom 100%",
+      scrub: 4,
+    },
+  })
   .to(".skills__title", {
     "clip-path": "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
     opacity: 1,

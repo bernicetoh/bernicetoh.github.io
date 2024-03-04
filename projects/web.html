@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bernice Toh | Web Projects</title>
+    <link rel="stylesheet" href="./../css/projects_styles.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Inter:wght@300;400;600&family=Lato&family=Montserrat:wght@400;500;600;700&family=Roboto+Mono&family=Sofia+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8caadc3166.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="transition transition-2 is-active">
+      <p class="transition-text hidden">Projects • Web</p>
+    </div>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item" id="navbar__item">
+            <a href="/index.html" class="navbar__links" id="navbar__links"
+              >Home</a
+            >
+          </li>
+          <li class="navbar__item" id="navbar__item">
+            <a href="/projects.html" aria-current="page" class="navbar__links"
+              >Projects</a
+            >
+          </li>
+          <!-- <li class="navbar__item" id="navbar__item">
+              <a href="/experiences.html" class="navbar__links">Experiences</a>
+            </li> -->
+          <li class="navbar__item" id="navbar__item">
+            <a href="/index.html#connect" class="navbar__links">Connect</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <a href="/projects.html" class="back">
+      <i class="fa-solid fa-arrow-left"></i>
+      <div>Back to projects</div>
+    </a>
+
+    <div class="wavescan revealUp project" id="wavescan">
+      <div class="container">
+        <div class="text-container">
+          <div class="project-title">
+            <h2>WaveScan Technologies</h2>
+          </div>
+          <div class="desc-text-container">
+            <p>
+              During my tenure as a software engineering intern at WaveScan of
+              Summer 2023, my primary emphasis was on enhancing the frontend
+              development of the company's web product. I played a pivotal role
+              in fortifying and seamlessly integrating innovative features into
+              the platform.
+            </p>
+          </div>
+          <div class="tech__stack">
+            <div class="tech__header">Technologies:</div>
+            <div>TypeScript, React, React Storybook, SCSS</div>
+          </div>
+        </div>
+        <div class="img-container-wavescan">
+          <img src="../images/wavescan/wavescan.png" class="gif" />
+        </div>
+      </div>
+    </div>
+
+    <div class="beanthere revealUp project" id="beanthere">
+      <div class="container">
+        <div class="text-container">
+          <div class="project-title">
+            <div class="links">
+              <a
+                class="github-link"
+                href="https://github.com/bernicetoh/bean-there"
+                target="_blank"
+                style="color: black"
+                ><i class="fa-brands fa-github"></i>
+                <p>Go to GitHub</p>
+              </a>
+              <a
+                class="direct"
+                href="https://bean-there.onrender.com/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </a>
+            </div>
+
+            <h2>Bean There</h2>
+          </div>
+          <div class="desc-text-container">
+            <p>
+              A fullstack web application that serves as a hub for coffee
+              enthusiasts to explore and critique coffee spots.
+            </p>
+            <div class="feature-container">
+              <p class="feature-title">Key features:</p>
+              <ul>
+                <li>Create an account with Bean There</li>
+                <li>
+                  Post a review of a coffee spot (only if you are logged in!)
+                </li>
+                <li>Browse reviews created by other members of Bean There</li>
+                <li>Get the average rating of a coffee spot</li>
+                <li>Locate the best rated coffee spot near you</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech__stack">
+            <div class="tech__header">Technologies:</div>
+            <div>TypeScript, React, SCSS, NodeJS, MongoDB</div>
+          </div>
+        </div>
+        <div class="img-container-wavescan">
+          <img src="../images/beanthere/beantheress1.png" class="gif" />
+        </div>
+      </div>
+    </div>
+
+    <div class="topBtn-container">
+      <button onclick="topFunction()" id="topBtn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </div>
+    <div class="peerprep revealUp project" id="peerprep">
+      <div class="container">
+        <div class="text-container">
+          <div class="project-title">
+            <div class="links">
+              <a
+                class="github-link"
+                href="https://github.com/bernicetoh/peerprep"
+                target="_blank"
+                style="color: black"
+                ><i class="fa-brands fa-github"></i>
+                <p>Go to GitHub</p>
+              </a>
+              <a
+                class="direct"
+                href="http://34.87.154.192:4173/#/auth"
+                target="_blank"
+              >
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </a>
+            </div>
+
+            <h2>PeerPrep</h2>
+          </div>
+          <div class="desc-text-container">
+            <p>
+              The ultimate hub for collaborative learning and problem-solving
+              👨‍💻. A fullstack web application developed done for the module
+              CS3219 Software Engineering Principles and Patterns.
+            </p>
+            <div class="feature-container">
+              <p class="feature-title">Key features:</p>
+              <ul>
+                <li>
+                  Get matched with a partner based on your question preferences
+                </li>
+                <li>
+                  Tackle whiteboard style technical questions together with our
+                  collaborative code editor and whiteboard
+                </li>
+                <li>Chat in real-time with your partner</li>
+                <li>View your history session to review your past attempts</li>
+              </ul>
+            </div>
+            <div class="tech__stack">
+              <div class="tech__header">Technologies:</div>
+              <div>
+                React, Tailwind, NestJS, MongoDB, PSQL, RabbitMQ, Socket.io
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-container-wavescan">
+          <img src="../images/peerprep/peerprep.png" class="gif" />
+        </div>
+      </div>
+    </div>
+
+    <div class="llama revealUp project" id="llama">
+      <div class="container">
+        <div class="text-container">
+          <div class="project-title">
+            <div class="links">
+              <a
+                class="github-link"
+                href="https://github.com/bernicetoh/llama-lunch"
+                target="_blank"
+                style="color: black"
+                ><i class="fa-brands fa-github"></i>
+                <p>Go to GitHub</p>
+              </a>
+            </div>
+
+            <h2>LlaMa Lunch</h2>
+          </div>
+          <div class="desc-text-container">
+            <p>
+              An interactive AI-cook assistant designed to inspire you with
+              recipe ideas based on your input ingredients developed to
+              supplement our research of Large Language Models for the module
+              CS3263, Foundations of Artificial Intelligence.
+            </p>
+            <div class="add-desc-container">
+              <p>
+                I took the initiative to conceive and implement an interactive
+                chatbot seamlessly integrated with its successor, LlaMa2. The
+                primary objective was to generate personalized recipes based on
+                user-input ingredients. Rigorous fine-tuning of the LlaMa2 model
+                was undertaken to ensure the realization of our team's specific
+                goals. This undertaking served as a pivotal use-case within the
+                framework of an exploratory project centered around Large
+                Language Models.
+              </p>
+            </div>
+            <div class="tech__stack">
+              <div class="tech__header">Technologies:</div>
+              <div>React, Tailwind, Python, Flask</div>
+            </div>
+          </div>
+        </div>
+        <div class="img-container-wavescan">
+          <img src="../images/llama/llama.png" class="gif" />
+        </div>
+      </div>
+    </div>
+    <div class="portfolio revealUp project" id="portfolio">
+      <div class="container">
+        <div class="text-container">
+          <a
+            href="https://github.com/bernicetoh/bernicetoh.github.io"
+            target="_blank"
+            style="color: black"
+          >
+            <div class="project-title">
+              <a
+                class="github-link"
+                href="https://github.com/bernicetoh/bernicetoh.github.io"
+                target="_blank"
+                style="color: black"
+                ><i class="fa-brands fa-github"></i>
+                <p>Go to GitHub</p>
+              </a>
+              <h2>My portfolio</h2>
+            </div>
+          </a>
+          <div class="desc-text-container">
+            <p>
+              I sought to grasp the core principles of web development, leading
+              me to employ vanilla JavaScript, HTML, and CSS in crafting this
+              portfolio website. My intention was to return to the fundamentals,
+              all the while maintaining the ability to showcase my projects and
+              skills effectively.
+            </p>
+            <div class="tech__stack">
+              <div class="tech__header">Technologies:</div>
+              <div>JavaScript, CSS, GreenSocket, HTML</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="./../js/projects_app.js"></script>
+    <script src="./../js/main.js"></script>
+  </body>
+</html>
